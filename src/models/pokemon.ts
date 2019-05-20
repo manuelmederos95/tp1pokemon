@@ -24,11 +24,17 @@ export class Pokemon {
   }
 
   attackPokemon(rival:Pokemon, attackIndex:number){
-    rival.hp = rival.hp - this.attacks[attackIndex - 1].damage;
+    rival.hp = rival.hp - this.attacks[attackIndex].damage;
+    console.log(this.getName() + " uses " + this.attacks[attackIndex].name);
+    console.log( rival.getName() + " hp: " + rival.hp );
   }
 
   getName() : string{
     return this.name;
+  }
+
+  isKO():boolean {
+    return this.hp <= 0;
   }
 }
 

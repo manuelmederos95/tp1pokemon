@@ -1,0 +1,27 @@
+{
+  "name": "tp1pokemon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "pokemon.js",
+  "scripts": {
+    "test": "jest",
+    "start": "tsc && node dist/game.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manuelmederos95/tp1pokemon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manuelmederos95/tp1pokemon/issues"
+  },
+  "homepage": "https://github.com/manuelmederos95/tp1pokemon#readme",
+  "devDependencies": {
+    "@types/jest": "^24.0.13",
+    "@types/node": "^12.0.2",
+    "jest": "^24.8.0",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.4.5"
+  }
+}
