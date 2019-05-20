@@ -1,7 +1,14 @@
-function Pokemon (nom) {
-  this.nom = nom;
+class Pokemon {
+  constructor(name) {
+    this.name = name;
+  }
+
+  getName() {
+    return this.name;
+  }
 }
 
-var pika = new Pokemon("Pikachu"); //Création nouvelle instance
 
-console.log(pika.nom);
+let pika = new Pokemon("Pikachu");
+console.log("Pika pika " + pika.getName());
+
